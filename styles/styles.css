@@ -2,6 +2,8 @@ body {
   height: 100vh;
   margin: 0;
   font-family: Poppins, sans-serif;
+  background-image: url("../images/bg-intro-desktop.png");
+  background-color: hsl(0, 100%, 74%) ;
 
   display: flex;
   flex-direction: column;
@@ -13,10 +15,23 @@ main {
   display: flex;
 
   width: 80%;
+  margin-top: 160px;
 }
 
 .text-container {
   flex: 1;
+  padding-right: 20px;
+  margin: auto;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 40px;
+  color: white;
+}
+
+.description {
+  color: white;
 }
 
 .form-container {
@@ -25,9 +40,108 @@ main {
   flex: 1;
 }
 
+.trial {
+  background-color: hsl(248, 32%, 49%);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.trial span {
+  font-weight: 300;
+}
+
 .card {
   display: flex;
   flex-direction: column;
+  gap: 20px;
+
+  background-color: white;
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.text-box {
+  display: flex;
+  position: relative;
+  box-sizing: border-box;
+}
+
+input {
+  flex: 1;
+  padding: 20px;
+  border-radius: 6px;
+  border: 1px solid hsl(246, 25%, 77%);
+  font-family: Poppins, sans-serif;
+  font-weight: 600;
+}
+
+input:focus {
+  outline: none;
+  border-top: 1px solid hsl(246, 25%, 77%);
+  border-right: 1px solid hsl(246, 25%, 77%);
+  border-left: 2px solid hsl(246, 25%, 77%);
+  border-bottom: 2px solid hsl(246, 25%, 77%);
+}
+
+.input-error:focus {
+  outline: 2px solid hsl(0, 100%, 74%);
+  outline-offset: -2px;
+}
+
+.error-icon {
+  display: none;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 18px;
+  right: 30px;
+}
+
+.error-message {
+  display: none;
+  color: hsl(0, 100%, 74%);
+  font-size: 12px;
+  font-weight: 600;
+  font-style: italic;
+  align-self: flex-end;
+  margin-top: -10px;
+}
+
+button {
+  background-color: hsl(154, 59%, 51%);
+  padding: 20px;
+  border-radius: 8px;
+  border: none;
+  border-top: 1px solid hsl(154, 57%, 48%);
+  border-bottom: 3px solid hsl(154, 58%, 39%);
+  text-transform: uppercase;
+  color: white;
+  font-family: Poppins, sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button:active {
+  background-color: hsla(154, 59%, 51%, 0.7);
+  border-top: 1px solid hsl(154, 57%, 48%, 0.2);
+  border-bottom: 3px solid hsl(154, 58%, 39%, 0.2);
+}
+
+.terms {
+  color: hsl(246, 25%, 77%);
+  font-size: 12px;
+  text-align: center;
+  margin-top: 0;
+}
+
+.terms span {
+  color: hsl(0, 100%, 74%);
+  font-weight: 700;
+  cursor: pointer;
 }
 
 .attribution { font-size: 11px; text-align: center; }
