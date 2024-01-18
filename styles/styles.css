@@ -146,3 +146,44 @@ button:active {
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+
+@media screen and (max-width: 375px){
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  main {
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 500px;
+    text-align: center;
+  }
+
+  .title {
+    font-size: 24px
+  }
+
+  .description {
+    font-size: 14px;
+    margin-bottom: 40px;
+  }
+
+  .trial {
+    font-size: 14px;
+  }
+
+  .trial div {
+    width: 80%;
+    margin: auto;
+  }
+
+  .card {
+    padding: 20px;
+  }
+
+  .error-icon {
+    right: 20px;
+  }
+}
